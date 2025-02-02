@@ -70,7 +70,7 @@ def get_drug_info_from_image(image_bytes):
         return None
 # Streamlit UI
 st.title("Drug Information Finder from Image")
-
+st.subheader("For informational purposes only. Consult a healthcare professional for medical advice.")
 uploaded_file = st.file_uploader("Upload an image of a medicine:", type=["jpg", "jpeg", "png"])  # Accept image uploads
 
 if uploaded_file is not None:
